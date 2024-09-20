@@ -4,11 +4,12 @@
     text-align: center;
 }
 
-h1{
+.h1{
     background-color: #081b31;
     color: white;
     height: 5rem;
     line-height: 5rem;
+    width: 100%;
 }
 
 body{
@@ -59,4 +60,33 @@ img{
     padding: 1rem;
     margin:  30px 40% 0 40%;
     border-radius: 1rem;
+}
+
+@media(max-width: 600px){
+    .h1{
+        width: 100%;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .choices{  
+        gap:0.5rem;
+    }
+    .choice{
+        height: 110px;
+        width: 110px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .msg-container{
+        margin:  50px 20% 0 20%;
+        justify-content: center;
+    }
+
 }
